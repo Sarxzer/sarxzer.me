@@ -1,0 +1,157 @@
+body {
+  font-family: "Ubuntu", serif;
+  background-color: black;
+  color: bisque;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 150px;
+}
+
+p.text {
+  font-size: 20px;
+  margin-top: 50px;
+}
+p.text.left {
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 50%;
+  border-left: 5px solid;
+}
+p.text.right {
+  text-align: right;
+  padding-right: 5px;
+  padding-left: 50%;
+  border-right: 5px solid;
+}
+
+img.pdp {
+  float: right;
+  height: 100px;
+}
+
+.scrolling-list {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.project-card {
+  border: bisque solid;
+  border-radius: 20px;
+  width: 150px;
+  height: 185px;
+  display: inline-block;
+}
+.project-card h3 {
+  text-align: center;
+}
+.project-card h3:not(.long) {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.project-card h3.long {
+  font-size: smaller;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.project-card img {
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  border: black solid 0;
+  border-radius: 25px;
+}
+
+footer {
+  height: 100px;
+  background-color: black;
+  border-top: bisque solid 2px;
+  margin: 0;
+  margin-top: 50px;
+  padding-top: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+footer p {
+  font-size: 15px;
+  margin: 0;
+  display: inline-block;
+}
+footer a {
+  margin: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: bisque;
+  text-decoration: none;
+  display: inline-block;
+}
+footer a:hover {
+  color: #ffdbb3;
+}
+footer .creative-commons {
+  display: block;
+  margin: 10px;
+  font-size: 10px;
+  border: bisque solid 2px;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer .creative-commons a {
+  font-size: 10px;
+  color: bisque;
+  text-decoration: none;
+  margin: 0;
+}
+footer .creative-commons img {
+  height: 10px;
+  margin: 0;
+  margin-right: 1px;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: bisque;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffe4c4;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ffdbb3;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #1f1f1f;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/*Scrollbar*/
