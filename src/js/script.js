@@ -23,16 +23,7 @@ function simulateDeleting(delay, targetElement) {
     }, delay);
 }
 
-function simulateTypingDeleting(text, delay, targetElement) {
-    simulateTyping(text, delay, targetElement);
-    setTimeout(() => {
-        simulateDeleting(delay, targetElement);
-    }, text.length * delay);
-}
-
 const title = document.getElementById('title');
 
-simulateTypingDeleting('<S/> ', 100, title);
-setTimeout(() => {
-    simulateTyping('<Sarxzer/>', 100, title);
-}, 2000);
+simulateDeleting(100, title);
+simulateTyping('<Sarxzer/>', 100, title);
