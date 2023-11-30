@@ -27,6 +27,16 @@ p.text.right {
   padding-left: 50%;
   border-right: 5px solid;
 }
+p.text a {
+  color: bisque;
+  text-decoration: none;
+  border-bottom: bisque solid 1px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+p.text a:hover {
+  color: black;
+  background-color: bisque;
+}
 
 img.pdp {
   float: right;
@@ -63,6 +73,9 @@ img.pdp {
   margin-left: 10px;
   border: black solid 0;
   border-radius: 25px;
+}
+.project-card p.hidden {
+  display: none;
 }
 
 footer {
@@ -106,9 +119,10 @@ footer .creative-commons a {
   margin: 0;
 }
 footer .creative-commons img {
-  height: 10px;
+  height: 12px;
   margin: 0;
   margin-right: 1px;
+  margin-left: 1px;
 }
 
 /*Scrollbar*/
