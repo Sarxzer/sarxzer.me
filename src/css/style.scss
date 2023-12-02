@@ -2,6 +2,10 @@ body {
     font-family: 'Ubuntu', serif;
     background-color: black;
     color: bisque;
+
+    scrollbar-color: bisque black;
+    scrollbar-width: thin;
+
 }
 
 h1.title {
@@ -9,40 +13,112 @@ h1.title {
     font-size: 100px;
     font-weight: bold;
     margin-bottom: 150px;
+
+    &.small {
+        font-size: 50px;
+        margin-bottom: 150px;
+    }
 }
 
-p.text {
-    font-size: 20px;
-    margin-top: 50px;
+p {
+  &.text {
+      font-size: 20px;
+      margin-top: 50px;
 
-    &.left {
-        text-align: left;
-        padding-left: 5px;
-        padding-right: 50%;
-        border-left: 5px solid;
-    }
+      &.left {
+          text-align: left;
+          padding-left: 5px;
+          padding-right: 50%;
+          border-left: 5px solid;
 
-    &.right {
-        text-align: right;
-        padding-right: 5px;
-        padding-left: 50%;
-        border-right: 5px solid;
-    }
+          &.long {
+            padding-right: 10%;
+          }
+      }
 
-    a {
-        color: bisque;
-        text-decoration: none;
-        border-bottom: bisque solid 1px;
-        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
+      &.right {
+          text-align: right;
+          padding-right: 5px;
+          padding-left: 50%;
+          border-right: 5px solid;
+
+          &.long {
+            padding-left: 10%;
+          }
+      }
+
+      a {
+          color: bisque;
+          text-decoration: none;
+          border-bottom: bisque solid 1px;
+          transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      }
+      
+
+      a:hover {
+          color: black;
+          background-color: bisque;
+      }
     
-
-    a:hover {
-        color: black;
-        background-color: bisque;
-    }
-
+  }
 }
+
+
+div.code-zone {
+
+  background-color: #1f1f1f;
+  border: bisque solid 2px;
+  border-radius: 5px;
+  
+  &.left {
+    float: left;
+    margin-left: 5px;
+    width: 45%;
+  }
+
+  &.right {
+    float: right;
+    margin-right: 5px;
+    width: 45%;
+  }
+
+
+  pre.code {
+    overflow: auto;
+    font-size: 15px;
+    padding: 5px;
+    color: bisque;
+  }
+  
+  button {
+    font-family: 'Ubuntu', serif;
+    font-size: 20px;
+    background-color: black;
+    color: bisque;
+    border: bisque solid 2px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  
+    &:hover {
+      background-color: bisque;
+      color: black;
+    }
+  
+    &.left {
+      float: left;
+      margin-left: 5px;
+    }
+  
+    &.right {
+      float: right;
+      margin-right: 5px;
+    }
+  }
+}
+
+
 
 img.pdp {
     float: right;
@@ -50,8 +126,10 @@ img.pdp {
 }
 
 .scrolling-list {
-    overflow-x: auto;
-    white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  align-items: center;
 }
 
 .project-card {
@@ -60,29 +138,53 @@ img.pdp {
   width: 150px;
   height: 185px;
   display: inline-block;
+  margin-right: 10px;
 
-  h3 {
+  a {
     text-align: center;
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+
     
 
     &:not(.long) {
-      margin: 5px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+
+      img {
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: black solid 0;
+        border-radius: 25px;
+        display: block;
+      }
     }
+
     &.long {
       font-size: smaller;
-      overflow: hidden;
       margin-top: 5px;
+      margin-bottom: 10px;
+      
+      img {
+        width: 130px;
+        height: 130px;
+        margin-left: 10px;
+        margin-top: 4px;
+        border: black solid 0;
+        border-radius: 25px;
+        display: block;
+      }
     }
+
+
   }
 
-  img {
-    width: 130px;
-    height: 130px;
-    margin-left: 10px;
-    border: black solid 0;
-    border-radius: 25px;
-  }
+
 
   p {
 
@@ -180,5 +282,7 @@ footer {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+
   
   /*Scrollbar*/

@@ -23,7 +23,17 @@ function simulateDeleting(delay, targetElement) {
     }, delay);
 }
 
-const title = document.getElementById('title');
-
-simulateDeleting(100, title);
-simulateTyping('<Sarxzer/>', 100, title);
+function copyCode() {
+    const codeToCopy = document.getElementById('codeToCopy');
+    const textarea = document.createElement('textarea');
+    textarea.textContent = codeToCopy.innerText;
+    document.body.append(textarea);
+    textarea.select();
+    try {
+      document.execCommand('copy');
+      console.log('Copying to clipboard was successful!');
+    } catch (err) {
+      console.error('Could not copy text: ', err);
+    }
+    textarea.remove(); // clean up
+  }
