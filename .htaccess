@@ -1,0 +1,15 @@
+
+# BEGIN: htaccess base file
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Rewrite rule to redirect all requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+# END: htaccess base file

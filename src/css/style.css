@@ -2,12 +2,18 @@ body {
   font-family: "Ubuntu", serif;
   background-color: black;
   color: bisque;
+  scrollbar-color: bisque black;
+  scrollbar-width: thin;
 }
 
 h1.title {
   text-align: center;
   font-size: 100px;
   font-weight: bold;
+  margin-bottom: 150px;
+}
+h1.title.small {
+  font-size: 50px;
   margin-bottom: 150px;
 }
 
@@ -21,11 +27,17 @@ p.text.left {
   padding-right: 50%;
   border-left: 5px solid;
 }
+p.text.left.long {
+  padding-right: 10%;
+}
 p.text.right {
   text-align: right;
   padding-right: 5px;
   padding-left: 50%;
   border-right: 5px solid;
+}
+p.text.right.long {
+  padding-left: 10%;
 }
 p.text a {
   color: bisque;
@@ -38,14 +50,61 @@ p.text a:hover {
   background-color: bisque;
 }
 
+div.code-zone {
+  background-color: #1f1f1f;
+  border: bisque solid 2px;
+  border-radius: 5px;
+}
+div.code-zone.left {
+  float: left;
+  margin-left: 5px;
+  width: 45%;
+}
+div.code-zone.right {
+  float: right;
+  margin-right: 5px;
+  width: 45%;
+}
+div.code-zone pre.code {
+  overflow: auto;
+  font-size: 15px;
+  padding: 5px;
+  color: bisque;
+}
+div.code-zone button {
+  font-family: "Ubuntu", serif;
+  font-size: 20px;
+  background-color: black;
+  color: bisque;
+  border: bisque solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+div.code-zone button:hover {
+  background-color: bisque;
+  color: black;
+}
+div.code-zone button.left {
+  float: left;
+  margin-left: 5px;
+}
+div.code-zone button.right {
+  float: right;
+  margin-right: 5px;
+}
+
 img.pdp {
   float: right;
   height: 100px;
 }
 
 .scrolling-list {
+  display: flex;
+  flex-direction: row;
   overflow-x: auto;
-  white-space: nowrap;
+  align-items: center;
 }
 
 .project-card {
@@ -54,25 +113,42 @@ img.pdp {
   width: 150px;
   height: 185px;
   display: inline-block;
+  margin-right: 10px;
 }
-.project-card h3 {
+.project-card a {
   text-align: center;
+  color: bisque;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
 }
-.project-card h3:not(.long) {
-  margin: 5px;
-  margin-bottom: 20px;
-}
-.project-card h3.long {
-  font-size: smaller;
-  overflow: hidden;
+.project-card a:not(.long) {
+  font-size: 20px;
   margin-top: 5px;
+  margin-bottom: 10px;
 }
-.project-card img {
+.project-card a:not(.long) img {
   width: 130px;
   height: 130px;
   margin-left: 10px;
+  margin-top: 10px;
   border: black solid 0;
   border-radius: 25px;
+  display: block;
+}
+.project-card a.long {
+  font-size: smaller;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.project-card a.long img {
+  width: 130px;
+  height: 130px;
+  margin-left: 10px;
+  margin-top: 4px;
+  border: black solid 0;
+  border-radius: 25px;
+  display: block;
 }
 .project-card p.hidden {
   display: none;
