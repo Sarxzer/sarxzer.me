@@ -3,55 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Sarxzer Portfolio">
         <meta name="description" content="This is my website. It's also a portfolio.">
-        <meta name="keywords" content="Sarxzer, Sarxzer.me, Sarxzer website, Sarxzer portfolio, Sarxzer projects, Sarxzer github, Sarxzer discord">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu:b|Ubuntu:i">
+        <meta name="keywords" content="Sarxzer, Sarxzer.xyz, Sarxzer website, Sarxzer portfolio, Sarxzer projects, Sarxzer github, Sarxzer discord">
+        <meta name="google-site-verification" content="NU_OQdulJfsicIYCMxJ9WOx5OavzlG3k_djD3QK00t8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu:b|Ubuntu:i|Ubuntu:500">
         <link rel="stylesheet" href="/src/css/style.css">
         <link rel="stylesheet" href="https://sarxzer.github.io/fontawesome/Font%20Awesome%20v6.2.0/css/all.css">
-        <link rel="shortcut icon" href="src/img/pdp.png" type="image/x-icon">
+        <link rel="shortcut icon" href="src/svg/logo.svg" type="image/x-icon">
         <script src="src/js/script.js"></script>
         <title>Sarxzer</title>
     </head>
     <body>
+
+        <div class="navbar">
+            <a href="/" class="active">> Home &lt;</a>
+            <div class="dropdown">
+                <a href="/projects/" class="btn">> Projects</a>
+                <div class="content">
+                    <a href="/projects/free-fa" class="element">> Free Fontawesome</a>
+                    <a href="/projects/sarxzerxyz" class="element">> sarxzer.xyz</a>
+                    <a href="/projects/minexpanded" class="element">> Minexpanded</a>
+                </div>
+            </div>
+        </div>
+        
+        
         <h1 class="title" id="title">.</h1>
-        <p class="text left">Lorem <a href="#">ffffdfdf</a> ipsum dolor sit, amet consectetur adipisicing elit. Amet dolorum eius minima laboriosam dolor obcaecati sequi repellat voluptatem, officiis fugit tempora perferendis architecto itaque voluptates quo sed aliquam perspiciatis delectus.</p>
-        <p class="text right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque eaque in voluptatum cupiditate eligendi suscipit nam. Perspiciatis sit voluptatum eum. Voluptas numquam dolor error veritatis aut laborum delectus, officia voluptatem.</p>
-        <h2 class="project-title left">My projects</h2>
+        <p class="text left">Meet me, Nathan, a <span id="age"></span>-years-old French passionate programmer.<br>With a programming background starting from the age of 12, I am proficient in multiple coding languages and frameworks.</p>
+        <p class="text left">As for my online presence, my preferred alias is Sarxzer</p>
+        <p class="text right">I am skilled in languages such as html, css, javascript, lua, python, and a bit of Java and c++.</p>
+
+        <p class="text left">Where find me? I have a lot of different account, principaly for games. I also have a <a href="https://www.linkedin.com/in/nathan-vaillendet/">LinkedIn</a> for profetional purpose. <br>To contact me, you can <a href="mailto:nathan@sarxzer.xyz">E-Mail</a> me or you can send me a direct message on Discord at @sarxzer.</p>
+        <p class="text right">I am curently working on a Minecraft mod called <a href="https://discord.com/invite/zPa9WbGzNy">Minexpanded</a> with some friends. So, go check out.</p>
+
+
+        <h2 class="project-title left"><a href="/projects/" class="hidden">> My projects</a></h2>
         <div class="scrolling-list">
-            <div class="project-card">
-                <a href="/projects/free-fa.html" class="long">
-                    Free pro version of <br> Fontawesome
-                    <img src="src/img/fa-pro-logo.png" alt="">
+            <div class="scrolling-project-card">
+                <a href="/projects/free-fa" class="long card">
+                    > Free pro version of <br> Fontawesome
+                    <img src="/src/img/fa-pro-logo.png" alt="Free fontawesome logo">
                 </a>
             </div>
-            <div class="project-card">
-                <a href="/projects/learn lua.html">
-                    Learn lua
-                    <img src="src/img/images.jpg" alt="">
+            <div class="scrolling-project-card">
+                <a href="/projects/sarxzerxyz" class="card">
+                    > Sarxzer.xyz
+                    <img src="/src/svg/logo.svg" alt="My website logo">
                 </a>
             </div>
-            <div class="project-card">
-                <a href="/projects/learn lua.html" class="long">
-                    Learn lua plus be <br> beutiful
-                    <img src="src/img/images.jpg" alt="">
+            <div class="scrolling-project-card">
+                <a href="/projects/minexpanded" class="card">
+                    > Minexpanded
+                    <img src="/src/img/minexpanded-logo.png" alt="Minexpanded logo">
                 </a>
             </div>
-            
         </div>
 
+        <!--footer-->
         <footer>
-            <a href="https://github.com/Sarxzer/sarxzer.me" class="link github"><i class="fa-brands fa-github fa-lg"></i></a>
-            <a href="mailto:nathanvaillendet@gmail.com"><i class="fa-solid fa-envelope fa-lg"></i></a>
-            <a href="https://discord.gg/8QZ2Q6X" class="link discord"><i class="fa-brands fa-discord fa-lg"></i></a>
-
+            <div class="link">
+                <a href="https://github.com/Sarxzer/sarxzer.me" class="link github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a>
+                <a href="mailto:nathan@sarxzer.xyz" target="_blank"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                <a href="https://www.tiktok.com/@sarxzerdev?_t=8hvhWLWUCfI&_r=1" target="_blank"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+            </div>
             
-            
-            <p class="creative-commons" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://sarxzer.me">Sarxzer Website</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Sarxzer">Nathan Vaillendet</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p> 
+            <div class="bottom-footer">
+                <p class="creative-commons" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://sarxzer.xyz">Sarxzer.xyz</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/Sarxzer">Nathan Vaillendet</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons logo"><img style="vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Creative Commons logo Free to share and adapt work"></a></p> 
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" class="hidden">
+                    <img style="border:0;height: 20px;"
+                        src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!">
+                </a>
+            </div>
         </footer>
 
 
         <script src="src/js/script.js"></script>
         <script>
+            document.getElementById('age').textContent = timeSince('2007-05-26', 'years')
             const title = document.getElementById('title');
             simulateDeleting(100, title);
             simulateTyping('<Sarxzer/>', 100, title);
