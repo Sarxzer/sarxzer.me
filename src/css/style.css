@@ -60,15 +60,24 @@ h1.title {
   text-align: center;
   font-size: 100px;
   font-weight: bold;
-  margin-bottom: 150px;
+  margin-bottom: 20%;
 }
 h1.title.small {
   font-size: 50px;
   margin-bottom: 150px;
 }
 h1.title.error {
-  margin-bottom: 150px;
   color: red;
+}
+@media (max-width: 540px) {
+  h1.title {
+    font-size: 50px;
+    margin-bottom: 10%;
+  }
+  h1.title.small {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
 }
 
 p {
@@ -90,6 +99,12 @@ p.text.left.small {
   font-size: 15px;
   border-left: 2px solid;
 }
+@media (max-width: 540px) {
+  p.text.left {
+    font-size: 15px;
+    padding-right: 20%;
+  }
+}
 p.text.right {
   text-align: right;
   padding-right: 5px;
@@ -102,6 +117,12 @@ p.text.right.long {
 p.text.right.small {
   font-size: 15px;
   border-right: 2px solid;
+}
+@media (max-width: 540px) {
+  p.text.right {
+    font-size: 15px;
+    padding-left: 20%;
+  }
 }
 p.text:not(.error) {
   margin-top: 50px;
@@ -150,6 +171,12 @@ a:not(.card).hidden {
 a:not(.card).hidden:hover {
   background-color: black;
   color: bisque;
+}
+@media (max-width: 540px) {
+  a:not(.card) {
+    font-size: 15px;
+    border-bottom: 1px solid bisque;
+  }
 }
 
 div.code-zone {
@@ -211,6 +238,12 @@ div.code-zone button.right {
   display: inline-block;
   margin-right: 10px;
 }
+@media (max-width: 540px) {
+  .scrolling-project-card {
+    width: 110px;
+    height: 140px;
+  }
+}
 .scrolling-project-card a {
   text-align: center;
   color: #ffe4c4;
@@ -247,6 +280,37 @@ div.code-zone button.right {
   border-radius: 25px;
   display: block;
 }
+@media (max-width: 540px) {
+  .scrolling-project-card a:not(.long) {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .scrolling-project-card a:not(.long) img {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: black solid 0;
+    border-radius: 25px;
+    display: block;
+    mix-blend-mode: normal;
+  }
+  .scrolling-project-card a.long {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .scrolling-project-card a.long img {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: black solid 0;
+    border-radius: 25px;
+    display: block;
+  }
+}
 .scrolling-project-card p.hidden {
   display: none;
 }
@@ -266,6 +330,12 @@ div.project-card {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+@media (max-width: 540px) {
+  div.project-card {
+    width: 110px;
+    height: 140px;
+  }
 }
 div.project-card a {
   text-align: center;
@@ -302,6 +372,37 @@ div.project-card a.long img {
   border: black solid 0;
   border-radius: 25px;
   display: block;
+}
+@media (max-width: 540px) {
+  div.project-card a:not(.long) {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  div.project-card a:not(.long) img {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border: black solid 0;
+    border-radius: 25px;
+    display: block;
+    mix-blend-mode: normal;
+  }
+  div.project-card a.long {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  div.project-card a.long img {
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    margin-top: 4px;
+    border: black solid 0;
+    border-radius: 25px;
+    display: block;
+  }
 }
 
 footer {
