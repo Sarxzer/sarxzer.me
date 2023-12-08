@@ -71,7 +71,7 @@ h1.title {
     text-align: center;
     font-size: 100px;
     font-weight: bold;
-    margin-bottom: 150px;
+    margin-bottom: 20%;
 
     &.small {
         font-size: 50px;
@@ -79,8 +79,17 @@ h1.title {
     }
 
     &.error {
-        margin-bottom: 150px;
         color: red;
+    }
+
+    @media (max-width: 540px) {
+      font-size: 50px;
+      margin-bottom: 10%;
+
+      &.small {
+        font-size: 30px;
+        margin-bottom: 50px;
+      }
     }
 }
 
@@ -104,6 +113,11 @@ p {
             font-size: 15px;
             border-left: 2px solid;
           }
+
+          @media (max-width: 540px) {
+            font-size: 15px;
+            padding-right: 20%;
+          }
       }
 
       &.right {
@@ -119,6 +133,11 @@ p {
           &.small {
             font-size: 15px;
             border-right: 2px solid;
+          }
+
+          @media (max-width: 540px) {
+            font-size: 15px;
+            padding-left: 20%;
           }
       }
 
@@ -180,6 +199,11 @@ a:not(.card) {
       background-color: black;
       color: bisque;
     }
+  }
+
+  @media (max-width: 540px) {
+    font-size: 15px;
+    border-bottom: 1px solid bisque ;
   }
 }
 
@@ -254,15 +278,18 @@ div.code-zone {
   display: inline-block;
   margin-right: 10px;
 
+  @media (max-width: 540px) {
+    width: 110px;
+    height: 140px;
+  }
+
   a {
     text-align: center;
     color: #ffe4c4;
     text-decoration: none;
     font-weight: bold;
     display: block;
-
-    
-
+  
     &:not(.long) {
       font-size: 20px;
       margin-top: 5px;
@@ -278,6 +305,7 @@ div.code-zone {
         display: block;
         mix-blend-mode: normal;
       }
+      
     }
 
     &.long {
@@ -293,6 +321,42 @@ div.code-zone {
         border: black solid 0;
         border-radius: 25px;
         display: block;
+      }
+    }
+
+    @media (max-width: 540px) {
+      &:not(.long) {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+  
+        img {
+          width: 100px;
+          height: 100px;
+          margin-left: 5px;
+          margin-top: 10px;
+          border: black solid 0;
+          border-radius: 25px;
+          display: block;
+          mix-blend-mode: normal;
+        }
+        
+      }
+  
+      &.long {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
+        img {
+          width: 100px;
+          height: 100px;
+          margin-left: 5px;
+          margin-top: 4px;
+          border: black solid 0;
+          border-radius: 25px;
+          display: block;
+        }
       }
     }
 
@@ -325,6 +389,11 @@ div.project-card {
   margin-right: 10px;
   margin-bottom: 10px;
 
+  @media (max-width: 540px) {
+    width: 110px;
+    height: 140px;
+  }
+
   a {
     text-align: center;
     color: #ffe4c4;
@@ -367,6 +436,41 @@ div.project-card {
       }
     }
 
+    @media (max-width: 540px) {
+      &:not(.long) {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+  
+        img {
+          width: 100px;
+          height: 100px;
+          margin-left: 5px;
+          margin-top: 10px;
+          border: black solid 0;
+          border-radius: 25px;
+          display: block;
+          mix-blend-mode: normal;
+        }
+        
+      }
+  
+      &.long {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
+        img {
+          width: 100px;
+          height: 100px;
+          margin-left: 5px;
+          margin-top: 4px;
+          border: black solid 0;
+          border-radius: 25px;
+          display: block;
+        }
+      }
+    }
   }
 }
 
