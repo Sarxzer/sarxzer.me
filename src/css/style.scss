@@ -557,6 +557,27 @@ footer {
       img {
         margin: 0;
         margin-right: 5px;
+        height: 20px;
+      }
+    }
+
+    @media (max-width: 540px) {
+      font-size: 7px;
+
+      a {
+        font-size: 7px;
+
+        img {
+          height: 10px;
+        }
+      }
+
+      .creative-commons {
+        font-size: 7px;
+
+        img {
+          height: 10px;
+        }
       }
     }
   }
