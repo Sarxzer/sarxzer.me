@@ -482,6 +482,24 @@ footer .bottom-footer a {
 footer .bottom-footer a img {
   margin: 0;
   margin-right: 5px;
+  height: 20px;
+}
+@media (max-width: 540px) {
+  footer .bottom-footer {
+    font-size: 7px;
+  }
+  footer .bottom-footer a {
+    font-size: 7px;
+  }
+  footer .bottom-footer a img {
+    height: 10px;
+  }
+  footer .bottom-footer .creative-commons {
+    font-size: 7px;
+  }
+  footer .bottom-footer .creative-commons img {
+    height: 10px;
+  }
 }
 
 /*Scrollbar*/
